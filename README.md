@@ -1,121 +1,107 @@
-📚 Course Management Application (Full Stack)
+# 🎓 Course Management Application
 
-A full-stack Course Management Application built using React, Node.js, Express, and SQLite.
-The application allows users to register, login, and manage courses with a secure and colorful user interface.
+A modern **full-stack Course Management Application** built using **React, Node.js, Express, and SQLite**.  
+The application enables users to **register, log in securely, and manage courses** through a clean and colorful user interface.
 
-🚀 Features
-🔐 Authentication
+---
 
-User Registration with validation
+## ✨ Features
 
-User Login with JWT authentication
+### 🔐 Authentication
+- User registration with validation
+- Secure login using JWT authentication
+- Password hashing with bcrypt
+- Token-based authorization
+- Logout functionality
 
-Password hashing using bcrypt
+### 📘 Course Management
+- Create new courses
+- View all courses
+- Delete courses
+- Real-time updates on dashboard
 
-Secure token-based authorization
+### 🎨 User Experience
+- Colorful gradient UI
+- Card-based layout
+- Simple, clean, and intuitive navigation
 
-Logout functionality
+---
 
-📘 Course Management (CRUD)
+## 🛠️ Tech Stack
 
-Create a new course
+**Frontend**
+- React
+- React Router DOM
+- Axios
+- CSS (Custom styling)
 
-View all available courses
+**Backend**
+- Node.js
+- Express.js
+- SQLite
+- JWT (JSON Web Token)
+- bcryptjs
 
-Delete courses
+---
 
-Real-time updates on dashboard
+## 📂 Project Structure
 
-🎨 User Interface
-
-Modern & colorful UI
-
-Gradient backgrounds
-
-Card-based layout
-
-Clean UX for easy navigation
-
-🛠 Tech Stack
-Frontend
-
-React
-
-React Router DOM
-
-Axios
-
-CSS (Custom gradient UI)
-
-Backend
-
-Node.js
-
-Express.js
-
-SQLite
-
-JSON Web Token (JWT)
-
-bcryptjs
-
-📂 Project Structure
 course-management-app/
 ├── backend/
-│   ├── db/
-│   ├── middleware/
-│   ├── routes/
-│   ├── package.json
-│   └── server.js
+│ ├── db/
+│ ├── middleware/
+│ ├── routes/
+│ └── server.js
 │
 └── frontend/
-    ├── public/
-    ├── src/
-    │   ├── components/
-    │   ├── services/
-    │   └── styles.css
-    └── package.json
+├── public/
+├── src/
+│ ├── components/
+│ ├── services/
+│ └── styles.css
+└── package.json
 
-⚙️ How to Run the Project Locally
-1️⃣ Clone the Repository
+yaml
+Copy code
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the Repository
+```bash
 git clone https://github.com/manmohangithub/course-management-app.git
 cd course-management-app
-
-2️⃣ Run Backend
+2️⃣ Start the Backend
+bash
+Copy code
 cd backend
 npm install
 npm start
+Runs on: http://localhost:5000
 
-
-Backend will run on:
-
-http://localhost:5000
-
-3️⃣ Run Frontend
-
-Open a new terminal:
-
+3️⃣ Start the Frontend
+bash
+Copy code
 cd frontend
 npm install
 npm start
+Runs on: http://localhost:3000
 
-
-Frontend will run on:
-
-http://localhost:3000
-
-🔐 API Endpoints
+🔌 API Endpoints
 Authentication
 Method	Endpoint	Description
-POST	/api/auth/register	Register a user
+POST	/api/auth/register	Register user
 POST	/api/auth/login	Login user
+
 Courses
 Method	Endpoint	Description
-POST	/api/courses	Create a course
-GET	/api/courses	Fetch all courses
-DELETE	/api/course/:id	Delete a course
-🗄️ Database Design (SQLite)
-Users Table
+POST	/api/courses	Create course
+GET	/api/courses	Get all courses
+DELETE	/api/course/:id	Delete course
+
+🗄️ Database Schema
+Users
 
 id (Primary Key)
 
@@ -125,7 +111,7 @@ email (Unique)
 
 password (Hashed)
 
-Courses Table
+Courses
 
 id (Primary Key)
 
@@ -136,8 +122,7 @@ description
 instructor
 
 📸 Screenshots
-
-(Add screenshots here)
+Add screenshots of:
 
 Login Page
 
@@ -145,32 +130,20 @@ Register Page
 
 Dashboard
 
-Course Listing
+Course Management
 
-🌟 Highlights
+🌟 Key Highlights
+Clean REST API design
 
-Clean and scalable project structure
+Secure authentication flow
 
-REST-compliant API design
+Simple and scalable architecture
 
-Secure authentication mechanism
+Lightweight SQLite database
 
-Beginner-friendly full-stack implementation
-
-📝 Notes
-
-No authentication UI framework used (pure React + CSS)
-
-SQLite used for lightweight local storage
-
-Project follows proper naming conventions and REST standards
+Beginner-friendly full-stack project
 
 👤 Author
-
 Medapati Manmohan Reddy
-
 GitHub: https://github.com/manmohangithub
 
-📌 License
-
-This project is created for educational and assignment purposes.
